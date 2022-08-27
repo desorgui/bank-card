@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive card</title>
+</head>
+<body>
+    <main class="main" id="main">
+        <div class="container-form d-flex">
+            <div class="left-side"></div>
+            <div class="right-side d-flex">
+                <form action="" class="d-flex form">
+                    <label for="holder" class="name">Cardholder Name</label>
+                    <input type="text" id="holder" class="holder" placeholder="e.g Jane Appleseed">
+                    <label for="card-number" class="card-number">Card Number</label>
+                    <input type="text" id="card-number" class="card-number-input" placeholder="e.g. 1234 5678 9012 3456">
+                    <div class="expiry-date d-flex">
+                        <div>
+                            <label for="expiry-date" class="expiry-date">Exp. Date (MM/YY)</label>
+                            <div class="d-flex">
+                                <input type="text" id="expiry-date" class="expiry-date-input" placeholder="YY">
+                                <input type="text" id="expiry-date-2" class="expiry-date-2" placeholder="YY">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="cvc" class="cvc">CVC</label>
+                            <input type="text" id="cvc" class="cvc-input" placeholder="e.g. 123">
+                        </div>
+                    </div>
+                    <button type="submit" class="submit">Confirm</button>
+                </form>
+            </div>
+            <div class="card-front">
+                <div class="content">
+                    <img src="images/card-logo.svg" alt="visa">
+                    <span class="front-card-number">0000 0000 0000 0000</span>
+                    <div class="d-flex justify-sb">
+                        <span class="holder-name">Jane Appleseed</span>
+                        <span class="expiry-date">00/00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-back">
+                <div class="black-line"></div>
+                <span class="card-back-cvc">000</span>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

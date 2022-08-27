@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+*:not(head title) {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  Font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: #333;
+  background: #fff;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex.justify-sb {
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.front-card-number {
+  text-align: center;
+  margin-top: 30px;
+}
+
+img {
+  margin-left: 30px !important;
+  margin-top: 20px !important;
+}
+
+main#main {
+  padding: 0 10%;
+  max-width: 1440px;
+}
+
+.container-form {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  margin-top: 5vh;
+  background-color: #f5f5f5;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.1);
+}
+
+.left-side {
+  width: 30%;
+  height: 100%;
+  background-color: hsl(278, 68%, 11%);
+  background-image: url(images/bg-main-desktop.png);
+}
+
+.right-side {
+  width: 70%;
+  height: 100%;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  flex-direction: column;
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 335px;
+  height: 176px;
+  color: #fff;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-front {
+  top: 15vh;
+  left: 10%;  
+  background-image: url(images/bg-card-front.png);
+}
+
+.card-back {
+  top: 45vh;
+  left: 15%;
+  background-image: url(images/bg-card-back.png);
+}
+
+.card-back-cvc {
+  margin-top: 75px;
+  margin-left: 260px;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+  text-indent: 10px;
+}
+
+input#expiry-date, input#expiry-date-2 {
+  width: 65px;
+  margin-right: 1rem;
+}
+
+label:not(label.name) {
+  margin-top: 20px;
+}
+
+button.submit {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  background-color: hsl(278, 68%, 11%);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .left-side {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(278, 68%, 11%);
+    background-image: url(images/bg-main-mobile.png);
+  }
+}
