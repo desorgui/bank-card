@@ -134,8 +134,38 @@ button.submit {
 @media screen and (max-width: 768px) {
   .left-side {
     width: 100%;
-    height: 100%;
+    height: 250px;
     background-color: hsl(278, 68%, 11%);
     background-image: url(images/bg-main-mobile.png);
+  }
+
+  .right-side {
+    width: 100%;
+  }
+
+  main#main {
+    padding: 0;
+  }
+
+  .container-form {
+    flex-direction: column;
+    margin-top: 0;
+    height: auto;
+  }
+
+  form {
+    margin-top: 80px !important
+  }
+
+  .card-back {
+    top: 30px;
+    left: auto;
+    right: 3%;
+  }
+
+  .card-front {
+    z-index: 2;
+    top: 130px;
+    left: 6%;
   }
 }
